@@ -1,0 +1,70 @@
+.header-container {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 500px;
+}
+
+.netflix-logo {
+    width: 148px;
+}
+
+.right-header {
+    display: flex;
+    gap: 8px;
+}
+
+.select-language {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 124px;
+    height: 32px;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+.language-icon {
+    width: 18px;
+}
+
+.select-language select {
+    font-size: 16px;
+    color: white;
+    background-color: transparent;
+    border: 0;
+}
+
+.select-language select:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.select-language select option {
+    font-size: 14px;
+    color: black;
+    background-color: transparent;
+    border: 0;
+}
+
+
+.sign-in-button {
+    width: 77px;
+    height: 32px;
+    background-color: rgb(229, 9, 20);
+    border-radius: 3px;
+    border-width: 0;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+}
+
+.sign-in-button:hover {
+    background-color: rgb(207, 8, 18);
+}
+
+.sign-in-button:active {
+    background-color: rgb(176, 7, 15);
+}
