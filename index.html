@@ -18,14 +18,21 @@
                 <img class="netflix-logo" src="assets/icons/netflix-logo.svg" alt="Netflix logo">
             </div>
             <div class="right-header">
-                <div class="select-language">
-                    <img class="language-icon" src="assets/icons/language-icon.svg">
-                    <select>
-                        <option>English</option>
-                        <option>हिन्दी</option>
-                        <option>日本語</option>
-                    </select>
-                </div>
+                <input type="checkbox" id="language-toggle" class="dropdown-checkbox">
+                <label for="language-toggle" class="dropdown-label">
+                    <div class="select-language-container">
+                        <img class="language-icon" src="assets/icons/language-icon.svg">
+                        <div class="current-language">
+                            English
+                        </div>
+                        <img class="dropdown-menu-icon" src="assets/icons/dropdown-icon.svg">
+                        <ul class="language-dropdown-menu">
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">हिन्दी</a></li>
+                            <li><a href="#">日本語</a></li>
+                        </ul>
+                    </div>
+                </label>
                 
                 <button class="sign-in-button">
                     Sign In
