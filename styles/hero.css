@@ -29,29 +29,107 @@
     width: 600px;
     font-size: 56px;
     text-align: center;
+    margin-bottom: 40px;
 }
 
 .hero-subtitle {
     font-size: 20px;
     text-align: center;
+    margin-bottom: 25px;
 }
 
 .hero-description {
     font-size: 16px;
     text-align: center;
+    margin-bottom: 15px;
 }
 
-.input-email {
-    width: 100%;
-    padding: 16px;
+.hero-signup-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.hero-input-box {
+    position: relative;
+    flex: 1;
+    background-color: rgba(22, 22, 22, 0.7);
     border: 1px solid rgb(128, 128, 128);
     border-radius: 4px;
-    background-color: rgba(22, 22, 22, 0.7);
+}
+
+.hero-input-box:has(.email-input:focus) {
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
+
+.email-input {
+    width: 100%;
+    padding: 24px 16px 8px;
+    background: transparent;
+    border: none;
     color: white;
     font-size: 16px;
 }
 
-.input-email:focus {
-    outline: 2px solid white;
-    outline-offset: 2px;
+.email-input:focus {
+    outline: none;
+}
+
+.email-label {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(147, 150, 153);
+    font-size: 16px;
+    pointer-events: none;
+
+    transition:
+        top 0.15s ease,
+        transform 0.15s ease,
+        font-size 0.15s ease;
+}
+
+
+.email-input:focus + .email-label,
+.email-input:not(:placeholder-shown) + .email-label {
+    top: 8px;
+    transform: translateY(0);
+    font-size: 12px;
+}
+
+
+.hero-get-started-button {
+    height: 52px;
+    padding: 0 24px;
+    border: none;
+    border-radius: 5px;
+
+    background-color: rgb(229, 9, 20);
+    color: white;
+
+    font-size: 24px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    flex-shrink: 0;
+}
+
+.hero-get-started-button:hover {
+    background-color: rgb(207, 8, 18);
+}
+
+.hero-get-started-button:active {
+    background-color: rgb(176, 7, 15);
+}
+
+.get-started-icon {
+    height: 20px;
 }
