@@ -1,0 +1,25 @@
+.trending-container {
+    width: 1128px;
+    height: 315px;
+}
+
+.trends-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shows-card {
+    height: 196px;
+    width: 140px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.shows-card img {
+    display: block;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
