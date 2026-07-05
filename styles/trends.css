@@ -4,22 +4,31 @@
 }
 
 .trends-bar {
+    padding: 15px 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
-.shows-card {
-    height: 196px;
-    width: 140px;
-    border-radius: 15px;
-    overflow: hidden;
+.show-card {
+    position: relative;
+    height: 252px;
+    width: 180px;
 }
 
-.shows-card img {
+.show-poster {
     display: block;
     object-position: center;
     height: 100%;
     width: 100%;
+    border-radius: 15px;
     object-fit: cover;
+}
+
+.rank-number {
+    position: absolute;
+    z-index: 100px;
+    left: -52px;
+    bottom: 25px;
+    height: 120px;
 }

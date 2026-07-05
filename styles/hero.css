@@ -1,6 +1,7 @@
 .hero-section {
     position: relative;
     width: 100%;
+    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,6 +135,7 @@
     height: 20px;
 }
 
+
 .hero-curve-container {
     position: absolute;
     z-index: 150;
@@ -151,17 +153,16 @@
     height: 90px; 
     border-top: 4px solid rgb(147, 52, 52);
     border-radius: 50%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
     background-color: rgb(0, 0, 0);
 }
 
 .glow {
-    width: 50%;
-    height: 60px;
-    background: rgb(96, 115, 225);
-    filter: blur(60px);
-    opacity: 0.5;
+    position: absolute;
+    bottom: 0px;
+    z-index: 200;
+    width: 60%;
+    height: 25px;
+    border-radius: 50%;
+    background: rgba(129, 144, 235, 0.7);
+    filter: blur(40px);
 }
