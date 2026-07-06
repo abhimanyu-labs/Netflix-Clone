@@ -1,0 +1,54 @@
+.features-section {
+    margin-top: 36px;
+}
+
+.features-row {
+    padding: 18px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    gap: 16px;
+}
+
+.feature-card {
+    position: relative;
+    height: 321px;
+    width: 270px;
+    background-color: rgb(35, 0, 17);
+    padding: 14px;
+    border-radius: 26px;
+    overflow: hidden;
+}
+
+.feature-card h2 {
+    position: relative;
+    padding: 12px 0px;
+    z-index: 1;
+}
+
+.feature-card p {
+    position: relative;
+    padding: 6px 0px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    z-index: 1;
+}
+
+.feature-card img {
+    position: absolute;
+    bottom: 14px;
+    right: 14px;
+}
+
+.feature-glow {
+    position: absolute;
+    top: -200px;
+    left: -140px;
+    background-color: rgba(2, 2, 91, 0.5);
+    filter: blur(130px);
+    width: 400px;
+    height: 500px;
+    border-radius: 50%;
+    z-index: 0;
+}

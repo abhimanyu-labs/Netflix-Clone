@@ -1,0 +1,39 @@
+.query-checkbox {
+    display: none;
+}
+
+.query-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 84px;
+    width: 100%;
+    margin-bottom: 2px;
+    padding: 24px;
+    background-color: rgb(44, 42, 42);
+}
+
+.query-label p {
+    font-size: 24px;
+    color: white;
+    font-weight: 400;
+}
+.plus-icon {
+    height: 36px;
+    transition: transform 0.15s ease-in-out;
+}
+
+.query-checkbox:checked + .query-label .plus-icon {
+    transform: rotate(-45deg);
+}
+
+.query-answer {
+    pointer-events: none;
+    width: 100%;
+    padding: 24px;
+    background-color: rgb(44, 42, 42);
+    font-size: 24px;
+    color: white;
+    font-weight: 400;
+    transition: display 1s ease-in;
+}
