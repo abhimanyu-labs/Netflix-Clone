@@ -1,16 +1,32 @@
-.trending-container {
+.trending-section {
     width: 1128px;
     height: 315px;
 }
 
-.trends-bar {
-    padding: 15px 20px;
+.trends-container {
+    padding: 22px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.trends-row {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior:smooth;
+}
+
+.trends-row::-webkit-scrollbar{
+    display:none;
 }
 
 .show-card {
+    flex: 0 0 auto;
     position: relative;
     height: 252px;
     width: 180px;
@@ -31,4 +47,37 @@
     left: -52px;
     bottom: 25px;
     height: 120px;
+}
+
+.trends-scroll-left-button {
+    transform: rotateZ(180deg);
+}
+
+.trends-scroll-right-button,
+.trends-scroll-left-button {
+    border: none;
+    background-color: rgb(50, 46, 46);
+    height: 120px;
+    width: 26px;
+    padding: 4px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.12s ease-in-out;
+}
+
+.trends-scroll-right-button img,
+.trends-scroll-left-button img {
+    width: 22px;
+}
+
+.trends-scroll-right-button:hover,
+.trends-scroll-left-button:hover {
+    background-color: rgb(45, 41, 41);
+}
+
+.trends-scroll-right-button:active,
+.trends-scroll-left-button:active {
+    background-color: rgb(30, 27, 27);
 }
