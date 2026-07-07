@@ -13,3 +13,12 @@ body {
 main {
     padding: 20px 148px 0px;
 }
+
+footer {
+    padding: 20px 148px 0px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

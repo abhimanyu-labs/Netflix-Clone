@@ -11,6 +11,11 @@
     margin-bottom: 2px;
     padding: 24px;
     background-color: rgb(44, 42, 42);
+    cursor: pointer;
+}
+
+.query-label:hover {
+    background-color: rgb(67, 64, 64);
 }
 
 .query-label p {
@@ -30,10 +35,24 @@
 .query-answer {
     pointer-events: none;
     width: 100%;
-    padding: 24px;
     background-color: rgb(44, 42, 42);
     font-size: 24px;
     color: white;
     font-weight: 400;
-    transition: display 1s ease-in;
+    max-height: 0px;
+    overflow-y: hidden;
+    transition: max-height 0.3s ease-in-out;
 }
+
+.query-answer p {
+        padding: 24px;
+}
+
+.query-container {
+    margin: 6px 0px;
+}
+
+.query-container:has(.query-checkbox:checked) .query-answer {
+    max-height: 500px;
+}
+

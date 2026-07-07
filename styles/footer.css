@@ -1,57 +1,23 @@
-.hero-section {
-    position: relative;
-    width: 100%;
-    z-index: 1;
+.footer-signup {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 
-.hero-banner{
-    width:100%;
-    height:100vh;
-    object-fit:cover;
-}
-
-.hero-overlay {
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    opacity: 0.7;
-    position: absolute;
-    top: 0px;
-}
-
-.hero-info {
-    width: 600px;
-    position: absolute;
-}
-
-.hero-title {
-    font-size: 56px;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.hero-subtitle {
-    font-size: 20px;
-    text-align: center;
-    margin-bottom: 25px;
-}
-
-.hero-description {
+.footer-signup-description {
     font-size: 16px;
     text-align: center;
     margin-bottom: 15px;
 }
 
-.hero-signup-container {
+.footer-signup-container {
+    width: 790px;
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
-.hero-input-box {
+.footer-input-box {
     position: relative;
     flex: 1;
     background-color: rgba(22, 22, 22, 0.7);
@@ -59,7 +25,7 @@
     border-radius: 4px;
 }
 
-.hero-input-box:has(.email-input:focus) {
+.footer-input-box:has(.email-input:focus) {
     outline: 2px solid white;
     outline-offset: 2px;
 }
@@ -101,7 +67,7 @@
 }
 
 
-.hero-get-started-button {
+.footer-get-started-button {
     height: 52px;
     padding: 0 24px;
     border: none;
@@ -123,11 +89,11 @@
     flex-shrink: 0;
 }
 
-.hero-get-started-button:hover {
+.footer-get-started-button:hover {
     background-color: rgb(207, 8, 18);
 }
 
-.hero-get-started-button:active {
+.footer-get-started-button:active {
     background-color: rgb(176, 7, 15);
 }
 
@@ -135,34 +101,6 @@
     height: 20px;
 }
 
-
-.hero-curve-container {
-    position: absolute;
-    z-index: 150;
-    bottom: 0px;
-    left: 0;
-    width: 100%;
-    height: 40px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-}
-
-.hero-curve {
-    width: 200%;
-    height: 90px; 
-    border-top: 4px solid rgb(147, 52, 52);
-    border-radius: 50%;
-    background-color: rgb(0, 0, 0);
-}
-
-.glow {
-    position: absolute;
-    bottom: 0px;
-    z-index: 200;
-    width: 60%;
-    height: 25px;
-    border-radius: 50%;
-    background: rgba(44, 72, 255, 0.7);
-    filter: blur(40px);
+.footer-links {
+    
 }
