@@ -79,7 +79,8 @@ header{
 }
 
 .dropdown-checkbox:checked + .dropdown-label .select-language-container {
-     border: 2px solid white;
+    outline: 2px solid white;
+    outline-offset: 2px;
 }
 
 .language-dropdown-menu li:hover {
