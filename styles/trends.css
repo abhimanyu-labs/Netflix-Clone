@@ -1,6 +1,7 @@
 .trending-section {
-    width: 1128px;
-    height: 315px;
+    max-width: 1128px; 
+    width: 100%; 
+    margin: 0 auto;
 }
 
 .trends-container {
