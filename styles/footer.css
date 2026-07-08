@@ -108,7 +108,7 @@ footer {
 }
 
 .footer-contact {
-    color: rgb(147, 150, 153);
+    color: rgb(159, 162, 165);
     margin-bottom: 62px;
 }
 
@@ -125,7 +125,7 @@ footer {
 }
 
 .footer-column a {
-    color: rgb(147, 150, 153);
+    color: rgb(159, 162, 165);
     font-size: 14px;
     text-decoration: underline;
 }
@@ -138,11 +138,11 @@ footer {
 
 .footer-region {
     font-size: 14px;
-    color: rgb(147, 150, 153);
+    color: rgb(159, 162, 165);
     margin-bottom: 36px;
 }
 
 .footer-captcha {
     font-size: 14px;
-    color: rgb(147, 150, 153);  
+    color: rgb(159, 162, 165);  
 }
