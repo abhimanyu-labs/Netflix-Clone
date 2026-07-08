@@ -1,6 +1,5 @@
-footer {
-    margin: 86px 0px;
-    padding: 20px 148px 0px;
+.footer {
+    margin: 56px 0px 18px;
 }
 
 .footer-signup {
@@ -17,11 +16,13 @@ footer {
 }
 
 .footer-signup-container {
-    width: 790px;
+    width: 100%;
+    max-width: 790px;
     display: flex;
-    align-items: center;
-    gap: 8px;
+    flex-direction: column;
+    gap: 16px;;
 }
+
 
 .footer-input-box {
     position: relative;
@@ -114,7 +115,8 @@ footer {
 
 .footer-links {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
     margin-bottom: 62px;
 }
 
@@ -145,4 +147,14 @@ footer {
 .footer-captcha {
     font-size: 14px;
     color: rgb(159, 162, 165);  
+}
+
+@media (min-width: 600px) {
+    .footer-links {
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+    }
+    
+    .footer-signup-container {
+        flex-direction: row; 
+    }
 }

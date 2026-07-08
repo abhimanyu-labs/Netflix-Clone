@@ -14,10 +14,10 @@
 
 .trends-row {
     display: flex;
-    padding: 24px;
+    padding: 24px 46px;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
+    gap: 38px;
     overflow-x: auto;
     scroll-behavior:smooth;
 }
@@ -51,6 +51,44 @@
     bottom: 25px;
     height: 120px;
 }
+
+
+@media (max-width: 950px) {
+    .trends-row {
+        padding: 12px 18px;
+        gap: 24px;
+    }
+
+    .show-card {
+        width: 112px;
+        height: 156px;
+    }
+    .rank-number {
+        height: 56px;
+        bottom: 18px;
+        left: -26px;
+    }
+}
+
+
+@media (min-width: 950px) and (max-width: 1275px) {
+    .trends-row {
+        padding: 12px 18px;
+        gap: 32px;
+    }
+
+    .show-card {
+        width: 140px;
+        height: 196px;
+    }
+    .rank-number {
+        height: 80px;
+        bottom: 18px;
+        left: -36px;
+    }
+}
+
+
 
 .show-card:hover {
     transform: scale(1.05);
