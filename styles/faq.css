@@ -60,3 +60,12 @@
     max-height: 500px;
 }
 
+
+@media (max-width: 621px) {
+    .query-label p {
+        font-size: 22px;
+    }
+    .query-answer p {
+        font-size: 22px;
+    }
+}

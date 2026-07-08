@@ -22,21 +22,16 @@
     overflow: hidden;
 }
 
-@media (min-width: 621px) and (max-width: 900px) {
-    .features-row {
-        flex-wrap: wrap;
-    }
-    
-}
 
-@media (max-width: 621px) {
+
+@media (max-width: 950px) {
     .features-row {
         flex-direction: column;
     }
     .feature-card {
         height: 200px;
         min-width: 270px;
-        max-width: 600px;
+        max-width: 1000px;
         width: 100%;
     }
     
